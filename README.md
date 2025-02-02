@@ -2,11 +2,6 @@
 ### TSO-HA*-Net: A Hybrid Global Path Planner for the Inspection Vehi-cle Used in Caged Poultry Houses
 *Sample ROS-C++ code will be made available upon finalization in the COMPAG journal.*
 
-### 💫Contact
-
-  If you have any questions, please feel free to contact: **Yueping Sun** ``sunypujs@ujs.edu.cn``
-
-  
 # 1.Research background and purpose
   The scale of poultry farming has expanded, and the application of intelligent devices has increased. However, manual inspection of cage poultry houses is difficult, and inspection vehicles are urgently needed. The traditional track inspection scheme has problems such as easy damage to the track and tedious maintenance. The existing trackless inspection scheme lacks a stable and reliable path planner, and the "one room, one vehicle" mode has high costs. This study aims to propose a new global path planner to address the aforementioned issues.
 
@@ -35,6 +30,10 @@
   The combination of TSO-HA * - Net and topology planning shows high efficiency in poultry house experiments. The TSO-HA algorithm significantly reduces computation time and resource consumption, and TSO-HA * - Net only takes 546.62ms to plan the global route, which can meet the needs of poultry house inspection and replace traditional navigation methods. In the future, it will integrate positioning and navigation capabilities to achieve more accurate execution of inspection tasks.
 
 
+
+# 💫Contact
+
+  If you have any questions, please feel free to contact: **Yueping Sun** ``sunypujs@ujs.edu.cn``
 
 
 
