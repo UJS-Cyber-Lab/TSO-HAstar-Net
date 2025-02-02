@@ -48,9 +48,7 @@ The scale of poultry farming has expanded, and the application of intelligent de
 
 # 3.Experiment and data analysis
   Conduct comparative experiments based on the Jetson Orin NX platform to verify algorithm performance.
-## 3.1 H2 Calculation
-  The TSO-HA algorithm using DRT performs excellently in terms of planning success rate, computation time, and resource consumption, with significant advantages over LDP-MAP and A-dis.
-## 3.2 Line collision detection
+## 3.1 Line collision detection
   The improved occupancy grid template is more efficient than the OBB collision detection algorithm, reducing front-end planning time, and pre collision detection can avoid planning failures and improve planning efficiency.
 
 | ![](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_project/blob/main/picture/%E8%AE%BA%E6%96%87%E4%B8%AD%E6%B6%89%E5%8F%8A%E7%9A%84%E5%9B%BE%E7%89%87/4.%E6%A3%80%E6%B5%8B%E7%A2%B0%E6%92%9E%E7%9A%84%E8%A7%84%E5%88%92%E6%95%88%E6%9E%9C%E5%9B%BE/%E9%99%B7%E5%85%A5%E7%AA%84%E9%81%93.png) | ![](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_project/blob/main/picture/%E8%AE%BA%E6%96%87%E4%B8%AD%E6%B6%89%E5%8F%8A%E7%9A%84%E5%9B%BE%E7%89%87/4.%E6%A3%80%E6%B5%8B%E7%A2%B0%E6%92%9E%E7%9A%84%E8%A7%84%E5%88%92%E6%95%88%E6%9E%9C%E5%9B%BE/%E4%B8%8D%E9%99%B7%E5%85%A5%E7%AA%84%E9%81%93.png) |  
@@ -60,7 +58,7 @@ The scale of poultry farming has expanded, and the application of intelligent de
 
 <p align="center">Fig. 5. Planning effects with and without prior collision detection, (a) planning gets stuck in the narrow passage, (b) planning escapes from the narrow passage.</p>
 
-## 3.3 Inspection route planning based on TSO-HA Net
+## 3.2 Inspection route planning based on TSO-HA Net
   The inspection route planning based on TSO-HA Net has excellent performance, which can achieve in house and inter house inspections, reduce vehicle demand, and has short calculation time. It can also support multi vehicle collaborative inspections.
 
 | ![](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_project/blob/main/picture/%E8%AE%BA%E6%96%87%E4%B8%AD%E6%B6%89%E5%8F%8A%E7%9A%84%E5%9B%BE%E7%89%87/6.%E5%A4%9A%E6%9C%BA%E5%8D%8F%E5%90%8C%E8%A7%84%E5%88%92/a.png) | ![](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_project/blob/main/picture/%E8%AE%BA%E6%96%87%E4%B8%AD%E6%B6%89%E5%8F%8A%E7%9A%84%E5%9B%BE%E7%89%87/6.%E5%A4%9A%E6%9C%BA%E5%8D%8F%E5%90%8C%E8%A7%84%E5%88%92/b.png) |  
@@ -69,6 +67,8 @@ The scale of poultry farming has expanded, and the application of intelligent de
 
 <p align="center">Fig. 6. Single-house route planning, (a) inspection route, (b) access to specific positions.</p>
 
+## 3.3 H2 Calculation
+  The TSO-HA algorithm using DRT performs excellently in terms of planning success rate, computation time, and resource consumption, with significant advantages over LDP-MAP and A-dis.
 # 4.Conclusion
   The combination of TSO-HA * - Net and topology planning shows high efficiency in poultry house experiments. The TSO-HA algorithm significantly reduces computation time and resource consumption, and TSO-HA * - Net only takes 546.62ms to plan the global route, which can meet the needs of poultry house inspection and replace traditional navigation methods. In the future, it will integrate positioning and navigation capabilities to achieve more accurate execution of inspection tasks.
 
