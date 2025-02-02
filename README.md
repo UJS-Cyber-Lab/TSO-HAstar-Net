@@ -11,14 +11,12 @@ A hybrid global path planner for the inspection vehicles that combines improved 
 
 <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_Project/blob/main/picture/1.%E4%BB%8B%E7%BB%8D/%E5%A4%8D%E6%9D%82%E9%B8%A1%E8%88%8D%E7%8E%AF%E5%A2%83.png" width="100%" height="100%"> 
 
-<p align="center">
-Fig. 1. The site structure of a large-scale caged poultry farm.
-</p>
+<p align="center">Fig. 1. The site structure of a large-scale caged poultry farm.</p>
 
 ## 2.Introduction
 
-![](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_Project/blob/main/picture/2.6%E7%A7%8D%E4%B8%8D%E5%90%8C%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E5%9B%BE/%E6%8A%98%E7%BA%BFAtar%E5%9C%BA%E6%99%AF1.png)|![](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_Project/blob/main/picture/2.6%E7%A7%8D%E4%B8%8D%E5%90%8C%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E5%9B%BE/%E6%8A%98%E7%BA%BFAstar%E5%9C%BA%E6%99%AF2.png)|![](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_Project/blob/main/picture/2.6%E7%A7%8D%E4%B8%8D%E5%90%8C%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E5%9B%BE/%E6%8A%98%E7%BA%BFAstar%E5%9C%BA%E6%99%AF3.png)
-:-:|:-:|:-:
-(a)|(b)|(c)
-![](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_Project/blob/main/picture/2.6%E7%A7%8D%E4%B8%8D%E5%90%8C%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E5%9B%BE/%E6%8A%98%E7%BA%BFAstar%E5%9C%BA%E6%99%AF4.png)|![](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_Project/blob/main/picture/2.6%E7%A7%8D%E4%B8%8D%E5%90%8C%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E5%9B%BE/%E6%8A%98%E7%BA%BFAstar%E5%9C%BA%E6%99%AF5.png)|![](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_Project/blob/main/picture/2.6%E7%A7%8D%E4%B8%8D%E5%90%8C%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E5%9B%BE/%E6%8A%98%E7%BA%BFAstar%E5%9C%BA%E6%99%AF6.png)
-(d)|(e)|(f)
+|![1](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_Project/blob/main/picture/2.6%E7%A7%8D%E4%B8%8D%E5%90%8C%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E5%9B%BE/%E6%8A%98%E7%BA%BFAtar%E5%9C%BA%E6%99%AF1.png)|![2](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_Project/blob/main/picture/2.6%E7%A7%8D%E4%B8%8D%E5%90%8C%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E5%9B%BE/%E6%8A%98%E7%BA%BFAstar%E5%9C%BA%E6%99%AF2.png)|![3](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_Project/blob/main/picture/2.6%E7%A7%8D%E4%B8%8D%E5%90%8C%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E5%9B%BE/%E6%8A%98%E7%BA%BFAstar%E5%9C%BA%E6%99%AF3.png)|
+| --- | --- | --- | 
+|<p align="center">(a)</p>|<p align="center">(b)</p>|<p align="center">(c)</p>|
+|![4](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_Project/blob/main/picture/2.6%E7%A7%8D%E4%B8%8D%E5%90%8C%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E5%9B%BE/%E6%8A%98%E7%BA%BFAstar%E5%9C%BA%E6%99%AF4.png)|![5](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_Project/blob/main/picture/2.6%E7%A7%8D%E4%B8%8D%E5%90%8C%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E5%9B%BE/%E6%8A%98%E7%BA%BFAstar%E5%9C%BA%E6%99%AF5.png)|![6](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net_Project/blob/main/picture/2.6%E7%A7%8D%E4%B8%8D%E5%90%8C%E5%9C%BA%E6%99%AF%E4%B8%8B%E7%9A%84%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E5%9B%BE/%E6%8A%98%E7%BA%BFAstar%E5%9C%BA%E6%99%AF6.png)|
+|<p align="center">(d)</p>|<p align="center">(e)</p>|<p align="center">(f)</p>|
