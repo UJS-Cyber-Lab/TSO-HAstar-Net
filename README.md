@@ -74,12 +74,7 @@ The scale of poultry farming has expanded, and the application of intelligent de
 
 
 
-# 💫Contact
+# 📬Contact
 
   If you have any questions, please feel free to contact: **Yueping Sun** ``sunypujs@ujs.edu.cn``
 
-
-
-<img src="" width="100%" height="100%"> 
-
-<p align="center"></p>
