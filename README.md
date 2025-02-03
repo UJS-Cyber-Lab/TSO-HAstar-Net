@@ -2,7 +2,7 @@
 ### *Sample ROS-C++ code will be made available upon finalization in the COMPAG journal.*
 
 # 🌐Related papers
-#### Our related papers are now accessible:[TSO-HA*-Net: A Hybrid Global Path Planner for the Inspection Vehicle Used in Caged Poultry Houses]()
+#### Our related papers are now accessible:[]()
 
 # ⚡Quick Start
 *  ***TSO - HA***
