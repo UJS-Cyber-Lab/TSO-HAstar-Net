@@ -23,9 +23,23 @@ In order to clearly present the logical relationship and dynamic evolution proce
 Connection points serve as entry and exit points for the inspection vehicle within the topological network. An il-lustrative example of initiating topological planning on a directed path of the semi-structured network is shown in Fig. 2, which illustrates how the planned path is seamlessly integrated into the network as an inspection route.
 
 <p align="center">
-<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/Merging%20the%20path%20into%20the%20network/a.png" width="100%" height="100%"> 
+<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/Merging%20the%20path%20into%20the%20network/a.png" width="50%" height="50%"> 
 </p>
 <p align="center">Fig. 2. Merging the path into the network.</p>
+
+Planning inspection routes using TSO-HA*-Net demonstrates outstanding planning performance. In Fig. 14a, pathways through elongated inter-cage corridors maintain linear trajectories, while "U"-shaped intersections exhibit seamless connectivity and smooth transitions. This both helps mitigate tire wear and motor strain caused by stationary rotations in the differential-drive inspection vehicle and complies with the Ackermann steering geometry. By extract-ing key waypoints from linear path segments at regular intervals and storing them in a KD-tree format, detection points are designated where inspection vehicles can stop to identify diseased or dead poultry. Fig. 14b shows the route reaching specific positions, indicating that the inspection vehicle is able to access these points for charging or maintenance while complying with the network. The planned route enables house-to-house inspection, as shown in Fig. 15, reducing the need for additional vehicles. 
+The TSO-HA*-Net algorithm efficiently reduces the computational time required for both single-house and mul-tiple-house route planning. Planning an inspection route for a single house takes an average of 257.98ms, while plan-ning the global route that involves cross-coop transfers requires only 546.62ms.
+
+| ![](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/Single-house%20route%20planning/a.png) | ![](https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/Single-house%20route%20planning/b.png) |  
+| :---: | :---: | 
+| (a) | (b) | 
+
+<p align="center">Fig. 3. Single-house route planning, (a) inspection route, (b) access to specific positions.</p>
+
+<p align="center">
+<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/Multiple-house%20route%20planning/a.png" width="100%" height="100%"> 
+</p>
+<p align="center">Fig. 4. Multiple-house route planning.</p>
 
 # 💡Contribution
 ### The main contributions of this study are as follows:
