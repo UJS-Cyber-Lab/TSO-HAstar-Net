@@ -66,7 +66,7 @@ The scale of poultry farming has expanded, and the application of intelligent de
 
 <p align="center">Fig. 6. Single-house route planning, (a) inspection route, (b) access to specific positions.</p>
 
-## 3.3 H2 Calculation
+## 3.3 h2 Calculation
   The TSO-HA algorithm using DRT performs excellently in terms of planning success rate, computation time, and resource consumption, with significant advantages over LDP-MAP and A-dis.
 # 4.Conclusion
   The combination of TSO-HA * - Net and topology planning shows high efficiency in poultry house experiments. The TSO-HA algorithm significantly reduces computation time and resource consumption, and TSO-HA * - Net only takes 546.62ms to plan the global route, which can meet the needs of poultry house inspection and replace traditional navigation methods. In the future, it will integrate positioning and navigation capabilities to achieve more accurate execution of inspection tasks.
