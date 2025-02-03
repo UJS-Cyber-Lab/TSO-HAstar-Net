@@ -1,5 +1,5 @@
+# ❗Sample ROS-C++ code will be made available upon finalization in the COMPAG journal❗
 # TSO-HA*-Net: A Hybrid Global Path Planner for the Inspection Vehicle Used in Caged Poultry Houses
-### ❗*Sample ROS-C++ code will be made available upon finalization in the COMPAG journal.*❗
 
 TSO - HA* serves as a lower level planner and is employed to construct semi - structured topological networks. It integrates predefined inspection rules into the global grid map of the poultry house. This algorithm not only preserves the smoothness of mixed A * (HA *) paths but also reduces time and computational overhead, thus enhancing the speed and efficiency of network generation. Based on the topology network constructed by TSO - HA *, topology planning aims to plan a smooth inspection route that conforms to the starting and ending postures. By using Dijkstra's algorithm on the basis of this semi - structured topology network, the shortest path that meets the conditions can be found, ensuring that inspection vehicles can conduct inspections along this route.
 
