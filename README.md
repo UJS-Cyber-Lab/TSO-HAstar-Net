@@ -1,5 +1,4 @@
-# TSO-HA*-Net
-### TSO-HA*-Net: A Hybrid Global Path Planner for the Inspection Vehi-cle Used in Caged Poultry Houses
+# TSO-HA*-Net: A Hybrid Global Path Planner for the Inspection Vehi-cle Used in Caged Poultry Houses
 *Sample ROS-C++ code will be made available upon finalization in the COMPAG journal.*
 
 # Related papers
