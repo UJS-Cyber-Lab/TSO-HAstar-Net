@@ -50,7 +50,7 @@ The TSO-HA*-Net algorithm efficiently reduces the computational time required fo
 
 # 📬Contact
 
-  <p align="Justify">If you have any questions, please feel free to contact: ***Yueping Sun*** ``sunypujs@ujs.edu.cn``</p>
+If you have any questions, please feel free to contact: ***Yueping Sun*** ``sunypujs@ujs.edu.cn``
 
   
 
