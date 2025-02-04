@@ -1,17 +1,18 @@
 # ❗Sample ROS-C++ code will be made available upon finalization in the COMPAG journal❗
 # TSO-HA*-Net: A Hybrid Global Path Planner for the Inspection Vehicle Used in Caged Poultry Houses
 
-TSO - HA* serves as a lower level planner and is employed to construct semi - structured topological networks. It integrates predefined inspection rules into the global grid map of the poultry house. This algorithm not only preserves the smoothness of mixed A * (HA *) paths but also reduces time and computational overhead, thus enhancing the speed and efficiency of network generation. Based on the topology network constructed by TSO - HA *, topology planning aims to plan a smooth inspection route that conforms to the starting and ending postures. By using Dijkstra's algorithm on the basis of this semi - structured topology network, the shortest path that meets the conditions can be found, ensuring that inspection vehicles can conduct inspections along this route.
-
+TSO-HA*-Net is a hybrid global path planner that combines TSO-HA* with topological planning, which allows the inspection vehicle to continuously traverse a predetermined trackless route within each poultry house and conduct house-to-house inspections. Initially, the spatiotemporally optimized Hybrid A*(TSO-HA*) is employed as the lower-level planner to efficiently construct a semi-structured topological network by integrating predefined inspection rules into the global grid map of the poultry houses. Subsequently, the Dijkstra algorithm is adopted to plan a smooth inspection route that aligns with the starting and ending poses, conforming to the network. Our work provides valuable case studies and algorithmic insights for similar inspection task.
 
 # 🌐Related papers
 #### Our related papers are now accessible:[]()
 
-# ⚡Quick Start
-
+# 💡Contribution
+*  An improved Hybrid A* algorithm is proposed, which demonstrates shorter computational time, reduced re-source consumption, and a higher success rate when applied to high-resolution maps. This improvement is achieved through a new heuristic value calculation using the Distance Reference Tree and simplified occupancy grid templates for collision detection.
+*  A hybrid path planner called TSO-HA*-Net is proposed, integrating the improved HA* algorithm, specific in-spection rules and topological planning. This planner is efficient and flexible for planning inspection routes in large-scale maps, establishing an intermediate planning scheme between point-to-point and full-coverage path planning. It addresses the route requirements for coop inspection and adapts to the actual poultry house envi-ronment.
+*  The rail-less navigation system based on the presented planning scheme offers a viable alternative to traditional electromagnetic and line-following navigation. This study provides valuable case studies and algorithmic refer-ences for inspection tasks in caged poultry houses and similar facilities. 
 
 # ⭐Impact and Presentation
-In order to clearly present the logical relationship and dynamic evolution process between various elements, a flowchart is used as a visualization tool, which can present complex processes in a concise and intuitive way.
+TSO-HA*-Net consists of two parts: the lower-level TSO-HA* module and the upper-level topological planning module. The overall flowchart is shown in Fig. 1.
 
 <p align="center">
 <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/Flowchart%20for%20planning%20inspection%20routes%20via%20TSO-HA-Net.png" width="80%" height="80%"> 
@@ -19,7 +20,7 @@ In order to clearly present the logical relationship and dynamic evolution proce
 
 <p align="center">Fig. 1. Flowchart for planning inspection routes via TSO-HA*-Net.</p>
 
-Connection points serve as entry and exit points for the inspection vehicle within the topological network. An il-lustrative example of initiating topological planning on a directed path of the semi-structured network is shown in Fig. 2, which illustrates how the planned path is seamlessly integrated into the network as an inspection route.
+Connection points serve as entry and exit points for the inspection vehicle within the topological network. An illustrative example of initiating topological planning on a directed path of the semi-structured network is shown in Fig. 2, which illustrates how the planned path is seamlessly integrated into the network as an inspection route.
 
 <p align="center">
 <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/Merging%20the%20path%20into%20the%20network/a.png" width="50%" height="50%"> 
@@ -40,11 +41,8 @@ The TSO-HA*-Net algorithm efficiently reduces the computational time required fo
 </p>
 <p align="center">Fig. 4. Multiple-house route planning.</p>
 
-# 💡Contribution
-### The main contributions of this study are as follows:
-*  An improved Hybrid A* algorithm is proposed, which demonstrates shorter computational time, reduced re-source consumption, and a higher success rate when applied to high-resolution maps. This improvement is achieved through a new heuristic value calculation using the Distance Reference Tree and simplified occupancy grid templates for collision detection.
-*  A hybrid path planner called TSO-HA*-Net is proposed, integrating the improved HA* algorithm, specific in-spection rules and topological planning. This planner is efficient and flexible for planning inspection routes in large-scale maps, establishing an intermediate planning scheme between point-to-point and full-coverage path planning. It addresses the route requirements for coop inspection and adapts to the actual poultry house envi-ronment.
-*  The rail-less navigation system based on the presented planning scheme offers a viable alternative to traditional electromagnetic and line-following navigation. This study provides valuable case studies and algorithmic refer-ences for inspection tasks in caged poultry houses and similar facilities. 
+# ⚡Quick Start
+
 
 
 # 📬Contact
