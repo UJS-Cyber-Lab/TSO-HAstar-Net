@@ -18,7 +18,7 @@
 <p align="Justify">TSO-HA*-Net consists of two parts: the lower-level TSO-HA* module and the upper-level topological planning module. Essentially, it performs the task of planning a topological network and determining a route within the network. The overall flowchart is shown in Fig. 1.</p>
 
 <p align="center">
-<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/Flowchart%20for%20planning%20inspection%20routes%20via%20TSO-HA-Net.png" width="80%" height="80%"> 
+<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/Flowchart%20for%20planning%20inspection%20routes%20via%20TSO-HA-Net.jpg" width="80%" height="80%"> 
 </p>
 
 <p align="center">Fig. 1. Flowchart for planning inspection routes via TSO-HA*-Net.</p>
@@ -47,7 +47,7 @@ The TSO-HA*-Net algorithm efficiently reduces the computational time required fo
 <p align="Justify">Our planner has the potential to plan inspection routes in more intricate environments, as demonstrated in the Fig.5 below, with computation times requiring only a few hundred milliseconds.</p>
 
 <p align="center">
-<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/Multiple-house%20route%20planning/a.png" width="100%" height="100%"> 
+<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/A%20planning%20example%20in%20an%20intricate%20scenario.png" width="100%" height="100%"> 
 </p>
 <p align="center">Fig. 5. A planning example in an intricate scenario.</p>
 
