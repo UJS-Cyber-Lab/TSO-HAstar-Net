@@ -1,0 +1,44 @@
+# 程序中已经完备了各种逻辑，只要你想用哪个指令，直接在rqt_service_caller赋值然后“call”就行
+
+# rosrun rqt_service_caller rqt_service_caller
+
+# type：
+uint8 RECORD_TRAFFIC_ROUTE = 0 #记录半结构化道路路点，路网额外的拓扑（某俩边是否可连接）需要在文件中手动添加(程序里已更新为自动录入)
+uint8 LOAD_TRAFFIC_ROUTE = 1 # 加载半结构化道路（路网）
+uint8 LOAD_PATH = 2 #加载路径
+
+# command：
+# 执行示教路径EXECUTE_TEACH 或 记录示教路径RECORD_TEACH 时,其他type下这三个command无效:
+uint8 START = 0 #起点开始和暂停开始（EXECUTE_TEACH） 还表示开始录制路径/路网（RECORD_TEACH）（RECORD_TRAFFIC_ROUTE）
+# 1、2的指令可以复用，在不同type下不兼容
+uint8 PAUSE = 1 #暂停（EXECUTE_TEACH）
+uint8 STOP = 2 #终止（EXECUTE_TEACH）
+uint8 KEEP_TRAFFIC_ROUTE = 1 # only support two points for now 保存半结构化道路路点
+uint8 KEEP_TEACH = 2 #保存示教路径,保存录制的那条路径！！！！！！(未去实现)
+uint8 DISCARD = 5 #丢弃示教路径/路网/全覆盖路径
+
+
+# 服务调用的参数
+uint8 type
+uint8 command
+string dir #存放路径/路网的文件夹，想用这个参数必须先创建了该文件夹/  也是拓扑路径名字
+string path_name #示教路径存放的路径名 或 半结构化道路存放的路径名
+---
+string message #输出信息
+
+
+# 命令表
+# world:henhouse_world.launch
+# type=0，command=0：记录半结构化道路路点
+# type=0，command=1：保存半结构化道路路点   
+# type=0，command=5：丢弃半结构化道路路点
+# type=1，command=X(任意)，path_name="henhouse_traffic_route_x"：加载半结构化道路（路网）
+# type=2，command=0，path_name写入path，dir写入topology_path 加载路径
+
+
+# world:henhouse_world_obs.launch
+# type=3，command=0，path_name="path_xx-xx-xx xx:xx:xx"：执行示教路径（可用rosrun，两次）
+# type=3，command=1：暂停执行示教路径
+# type=3，command=2：终止执行示教路径
+
+
