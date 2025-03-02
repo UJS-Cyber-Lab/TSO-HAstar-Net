@@ -1,4 +1,3 @@
-## <p align="Justify">❗ Sample ROS-C++ code will be made available upon finalization in the ***Agricultural*** journal</p>
 # <p align="Justify">TSO-HA*-Net: A Hybrid Global Path Planner for the Inspection Vehicles Used in Caged Poultry Houses</p>
 
 <p align="Justify">
