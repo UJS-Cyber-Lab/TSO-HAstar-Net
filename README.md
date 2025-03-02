@@ -1,4 +1,4 @@
-## <p align="Justify">TSO-HA*-Net: A Hybrid Global Path Planner for the Inspection Vehicles in Poultry Houses</p>
+## <p align="Justify">TSO-HA*-Net: A Hybrid Global Path Planner for the Inspection Vehicles uesd in Poultry Houses</p>
 
 <p align="Justify">
 TSO-HA*-Net is a hybrid global path planner that combines TSO-HA* with topological planning, which allows the inspection vehicle to continuously traverse a predetermined trackless route within each poultry house and conduct house-to-house inspections. Initially, the spatiotemporally optimized Hybrid A*(TSO-HA*) is employed as the lower-level planner to efficiently construct a semi-structured topological network by integrating predefined inspection rules into the global grid map of the poultry houses. Subsequently, the Dijkstra's algorithm is adopted to plan a smooth inspection route that aligns with the starting and ending poses, conforming to the network.
