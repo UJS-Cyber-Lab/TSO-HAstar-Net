@@ -8,7 +8,7 @@ TSO-HA*-Net is a hybrid global path planner that combines TSO-HA* with topologic
 
 
 # 🌐 Related Paper
-#### Our related paper is now accessible in ***Agriculture-Basel*** Journal: [TSO-HA*-Net](https://doi.org/10.3390/agriculture15050532)
+#### Our related paper is now accessible in ***Agriculture-Basel*** Journal: [doi.org/10.3390/agriculture15050532](https://doi.org/10.3390/agriculture15050532)
 
 
 # 💡 Contribution
