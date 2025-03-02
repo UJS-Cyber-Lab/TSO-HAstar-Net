@@ -1,0 +1,12 @@
+image: inspection_map.pgm
+resolution: 0.100000
+# 由于gazebo仿真环境中小车不在原点，这里为了使小车在加载地图后回到建图起点作了偏移（-50+9，-50-8）
+# 地图怎么看？拿到正向地图，横轴向右x，纵轴向上y，把地图原点+41，+58就是ros-rviz中“map”坐标系的原点
+# origin: 地图的原点（地图栅格(0, 0)的实际世界坐标），地图中左下像素的二维姿势，为（x，y，偏航），偏航为逆时针旋转（偏航=0表示无旋转）
+origin: [-106.000000, -86.000000, 0.000000] #以ros-rviz中“map”坐标系为原点，单位为m
+# origin: [-10.000000, -8.000000, 0.000000] #以ros-rviz中“map”坐标系为原点，单位为m
+negate: 0
+#occupied_thresh: 0.65
+occupied_thresh: 0.25
+#free_thresh: 0.25
+free_thresh: 0.25
