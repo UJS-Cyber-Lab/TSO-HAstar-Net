@@ -1,14 +1,13 @@
-# <p align="Justify">TSO-HA*-Net: A Hybrid Global Path Planner for the Inspection Vehicles uesd in Poultry Houses</p>
+# <p align="Justify">TSO-HA*-Net</p>
 
 
-Our work provides valuable case studies and algorithmic insights for similar inspection tasks.
 <p align="Justify">
-TSO-HA*-Net is a hybrid global path planner that combines TSO-HA* with topological planning, which allows the inspection vehicle to continuously traverse a predetermined trackless route within each poultry house and conduct house-to-house inspections. Initially, the spatiotemporally optimized Hybrid A*(TSO-HA*) is employed as the lower-level planner to efficiently construct a semi-structured topological network by integrating predefined inspection rules into the global grid map of the poultry houses. Subsequently, the Dijkstra's algorithm is adopted to plan a smooth inspection route that aligns with the starting and ending poses, conforming to the network.
+TSO-HA*-Net is a hybrid global path planner that combines TSO-HA* with topological planning, which allows the inspection vehicle to continuously traverse a predetermined trackless route within each poultry house and conduct house-to-house inspections. Initially, the spatiotemporally optimized Hybrid A*(TSO-HA*) is employed as the lower-level planner to efficiently construct a semi-structured topological network by integrating predefined inspection rules into the global grid map of the poultry houses. Subsequently, the Dijkstra's algorithm is adopted to plan a smooth inspection route that aligns with the starting and ending poses, conforming to the network. TSO-HA*-Net provides valuable case studies and algorithmic insights for similar inspection tasks.
 </p>
 
 
 # 🌐 Related Paper
-#### Our related paper is now accessible in ***Agriculture-Basel*** Journal: [doi.org/10.3390/agriculture15050532](https://doi.org/10.3390/agriculture15050532)
+#### Our related paper is now accessible in ***Agriculture-Basel*** Journal: [doi.org/10.3390/agriculture15050532](https://doi.org/10.3390/agriculture15050532).
 
 
 # 💡 Contribution
@@ -26,15 +25,14 @@ TSO-HA*-Net is a hybrid global path planner that combines TSO-HA* with topologic
 
 <p align="center">Fig.1. Flowchart for planning inspection routes via TSO-HA*-Net.</p>
 
-<p align="Justify">Fig.2 demonstrates how the planned path is constrained by the topological network and relies on the connection points to merge seamlessly into the network. These connection points (indicated by labels 2 and 3) are key components in constructing the complete network, and serve as critical points for the inspection vehicle to enter and exit the network.</p>
+<p align="Justify">Fig.2 demonstrates how the planned path is constrained by the topological network and relies on the connection points to merge seamlessly into the network.</p>
 
 <p align="center">
 <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/Merging%20the%20path%20into%20the%20network/a.png" width="40%" height="40%"> 
 </p>
 <p align="center">Fig.2. Merging the path into the network.</p>
 
-<p align="Justify">Planning inspection routes using TSO-HA*-Net demonstrates outstanding planning performance. In Fig.3a, pathways through elongated inter-cage corridors maintain linear trajectories, while "U"-shaped intersections exhibit seamless connectivity and smooth transitions. This both helps mitigate tire wear and motor strain caused by stationary rotations in the differential-drive inspection vehicle and complies with the Ackermann steering geometry. By extracting key waypoints from linear path segments at regular intervals and storing them in a KD-tree format, detection points are designated where inspection vehicles can stop to identify diseased or dead poultry. Fig.3b shows the route reaching specific positions, indicating that the inspection vehicle is able to access these points for charging or maintenance while complying with the network. The planned route enables house-to-house inspection, as shown in Fig.4, reducing the need for additional vehicles. 
-The TSO-HA*-Net algorithm efficiently reduces the computational time required for both single-house and mul-tiple-house route planning. Planning an inspection route for a single house takes an average of 257.98ms, while planning the global route that involves cross-coop transfers requires only 546.62ms.</p>
+<p align="Justify">In Fig.3a, pathways through elongated inter-cage corridors maintain linear trajectories, while “U”-shaped intersections exhibit seamless connectivity and smooth transitions. Fig.3b illustrates that the inspection route retains the capability to cover specific areas, indicating that the inspection vehicle can reach designated locations via the shortest path while adhering to the constraints of the topological network. Moreover, the planned route enables house-to-house inspection, as shown in Fig.4, reducing the need for additional vehicles. </p>
 
 | <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/Single-house%20route%20planning/a.png" width="60%" height="60%"> | <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/picture/Single-house%20route%20planning/b.png" width="60%" height="60%"> |  
 | :---: | :---: | 
