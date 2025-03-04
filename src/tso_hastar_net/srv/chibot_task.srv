@@ -1,0 +1,28 @@
+# rosrun rqt_service_caller rqt_service_caller
+
+# type：
+uint8 RECORD_TRAFFIC_ROUTE = 0
+uint8 LOAD_TRAFFIC_ROUTE = 1
+uint8 LOAD_PATH = 2
+
+# command：
+uint8 START = 0
+uint8 KEEP_TRAFFIC_ROUTE = 1
+uint8 DISCARD = 5
+
+# arg:
+uint8 type
+uint8 command
+string map_name
+string dir
+string path_name
+---
+string message # output message
+
+
+# Command list:
+# type=0, command=0 ：record key topological nodes(pairs of starting & ending poses) using Rviz tools-"2D Pose Estimate"&"2D Nav Goal".
+# type=0, command=1 ：save nodes.
+# type=0, command=5 ：discard nodes.
+# type=1, command=x(Any), map_name=topology_map/inspection_traffic_route_x ：generate the semi-structured topological network.
+# type=2, command=x, map_name=topology_map/inspection_traffic_route_x, dir=topology_path/path_x, path_name=path/path_x : load the semi-structured topological network.

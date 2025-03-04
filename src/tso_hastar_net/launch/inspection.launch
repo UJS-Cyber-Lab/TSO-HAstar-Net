@@ -1,0 +1,35 @@
+<launch>
+
+    <!-- topology_map: inspection_traffic_route_3 -->
+    <arg name="map" default="$(find tso_hastar_net)/map/henhouse.yaml"/> 
+    <!-- topology_map: inspection_traffic_route_2 -->
+    <!-- <arg name="map" default="$(find tso_hastar_net)/map/inspection_map.yaml"/>   -->
+
+    <!-- Load the map -->
+    <node pkg="map_server" type="map_server" name="map_server" args="$(arg map)"/>
+
+    <param name="/root_path" value="$(find tso_hastar_net)" type="string"/>
+    <node pkg="tso_hastar_net" type="hybrid_astar_dubins_opt" name="hybrid_astar_dubins_opt" output="screen" >
+        <!-- For henhouse -->
+        <param name="Net/connection_point_num" value="1" type="int"/>
+        <!-- For inspection_map -->
+        <!-- <param name="Net/connection_point_num" value="2" type="int"/> -->
+
+        <!-- Valid range -->
+        <param name="Net/connection_points_range" value="15.0" type="double"/>
+        <!-- Inspection_traffic_route_(x+1) -->
+        <param name="Inspection_route_num" value="2" type="int"/>
+        <!-- Node expansion step, same as "step_size_" in hybrid_astar.h -->
+        <param name="Net/step_size" value="0.5" type="double"/>
+        
+        <!-- Dubins radius for topological planning-->
+        <param name="Hastar/dubins_radius" value="0.3" type="double"/>
+        <!-- Dubins radius for simple_astar planning-->
+        <!-- <param name="Hastar/dubins_radius" value="2.1" type="double"/> -->
+    </node>
+
+    <!-- Launch Rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" output="screen" 
+    args="-d $(find tso_hastar_net)/rviz/inspection.rviz" />
+
+</launch>

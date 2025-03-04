@@ -1,0 +1,17 @@
+<launch>
+
+    <!-- <arg name="map" default="$(find tso_hastar_net)/map/henhouse.yaml"/> -->
+    <arg name="map" default="$(find tso_hastar_net)/map/inspection_map.yaml"/>
+
+    <node pkg="map_server" type="map_server" name="map_server" args="$(arg map)"/>
+
+    <node pkg="tso_hastar_net" type="simple_astar_test" name="simple_astar_test" output="screen" >
+        <!-- Dubins radius for simple_astar planning -->
+        <param name="Hastar/dubins_radius" value="2.1" type="double"/>
+    </node>
+
+    <!-- Launch Rviz with the demo configuration -->
+    <node name="rviz" pkg="rviz" type="rviz" output="screen" 
+    args="-d $(find tso_hastar_net)/rviz/test.rviz" />
+
+</launch>

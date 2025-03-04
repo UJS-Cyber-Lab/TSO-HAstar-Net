@@ -1,0 +1,6 @@
+image: henhouse.pgm
+resolution: 0.100000
+origin: [-159.500000, -61.000000, 0.000000]
+negate: 0
+occupied_thresh: 0.196
+free_thresh: 0.196

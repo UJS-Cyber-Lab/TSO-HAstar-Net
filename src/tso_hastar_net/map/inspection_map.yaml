@@ -1,0 +1,6 @@
+image: inspection_map.pgm
+resolution: 0.100000
+origin: [-106.000000, -86.000000, 0.000000]
+negate: 0
+occupied_thresh: 0.25
+free_thresh: 0.25
