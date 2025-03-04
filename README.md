@@ -1,5 +1,3 @@
-# <p align="Justify">Under urgent maintenance!!!</p>
-
 # <p align="Justify">TSO-HA*-Net: A Hybrid Global Path Planner for the Inspection Vehicles uesd in Poultry Houses</p>
 
 
@@ -62,19 +60,19 @@ The TSO-HA*-Net algorithm efficiently reduces the computational time required fo
 catkin_make
 source devel/setup.bash
 ```
-#### TSO-HA*-Net:
+*  TSO-HA*-Net:
 ```c++ 
 roslaunch tso_hastar_net inspection.launch
 rosrun rqt_service_caller rqt_service_caller   -->  Service: /inspection_task see /src/tso_hastar_net/srv/chibot_task.srv for details
 ```
 
-#### TSO-HA*:
+*  TSO-HA*:
 ```c++ 
 roslaunch tso_hastar_net simple_astar.launch
 ```
 
 # 🌴 Dependency
-#### TSO-HA*-Net is tested in Ubuntu 20.04. Please install the following libraries before compilation.
+## TSO-HA*-Net is tested in Ubuntu 20.04. Please install the following libraries before compilation.
 **1.ROS (melodic or noetic)**
 
 **2.eigen: sudo apt-get install libeigen3-dev**
