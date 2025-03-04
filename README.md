@@ -72,7 +72,7 @@ roslaunch tso_hastar_net simple_astar.launch
 ```
 
 # 🌴 Dependency
-## TSO-HA*-Net is tested in Ubuntu 20.04. Please install the following libraries before compilation.
+#### TSO-HA*-Net is tested in Ubuntu 20.04. Please install the following libraries before compilation.
 **1.ROS (melodic or noetic)**
 
 **2.eigen: sudo apt-get install libeigen3-dev**
@@ -84,7 +84,11 @@ roslaunch tso_hastar_net simple_astar.launch
 
 
 # 📬 Contact
-If you have any questions, please feel free to contact: ***Yueping Sun*** ``sunypujs@ujs.edu.cn``    ***Cz Akria*** ``2222207069@stmail.ujs.edu.cn``
+If you have any questions, please feel free to contact: 
+
+***Yueping Sun*** ``sunypujs@ujs.edu.cn``   
+
+***Cz Akria*** ``2222207069@stmail.ujs.edu.cn``
 
   
 
