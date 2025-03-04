@@ -58,7 +58,31 @@ The TSO-HA*-Net algorithm efficiently reduces the computational time required fo
 
 
 # ⚡ Quick Start
-The tutorial will be released as soon as possible！
+```c++  
+catkin_make
+source devel/setup.bash
+```
+#### TSO-HA*-Net:
+```c++ 
+roslaunch tso_hastar_net inspection.launch
+rosrun rqt_service_caller rqt_service_caller   -->  Service: /inspection_task see /src/tso_hastar_net/srv/chibot_task.srv for details
+```
+
+#### TSO-HA*:
+```c++ 
+roslaunch tso_hastar_net simple_astar.launch
+```
+
+# 🌴 Dependency
+#### TSO-HA*-Net is tested in Ubuntu 20.04. Please install the following libraries before compilation.
+**1.ROS (melodic or noetic)**
+
+**2.eigen: sudo apt-get install libeigen3-dev**
+
+**3.pcl: sudo apt-get install libpcl-dev**
+
+**4.ompl**
+
 
 
 # 📬 Contact
