@@ -4,7 +4,7 @@
 TSO-HA*-Net is a hybrid global path planner for the inspection vehicles used in caged poultry houses that combines TSO-HA* with topological planning, which allows the inspection vehicle to continuously traverse a predetermined trackless route within each poultry house and conduct house-to-house inspections. Initially, the spatiotemporally optimized Hybrid A*(TSO-HA*) is employed as the lower-level planner to efficiently construct a semi-structured topological network by integrating predefined inspection rules into the global grid map of the poultry houses. Subsequently, the Dijkstra's algorithm is adopted to plan a smooth inspection route that aligns with the starting and ending poses, conforming to the network. TSO-HA*-Net provides valuable case studies and algorithmic insights for similar inspection tasks.
 </p>
 
-# 🌐 Related Paper
+# 🌐 Related paper
 Our related paper is now accessible in ***Agriculture-Basel*** : [doi.org/10.3390/agriculture15050532](https://doi.org/10.3390/agriculture15050532).
 
 # 💡 Contribution
@@ -45,23 +45,23 @@ Our related paper is now accessible in ***Agriculture-Basel*** : [doi.org/10.339
 
 # ⚡ Quick Start
 ```shell
-mkdir ~/$A_ROS_DIR$/src && cd ~/$A_ROS_DIR$/src
+cd ~
 git clone https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net.git
+cd TSO-HAstar-Net
 catkin_make
 source devel/setup.bash
 ```
 *  TSO-HA*-Net:
 ```shell 
 roslaunch tso_hastar_net inspection.launch
-rosrun rqt_service_caller rqt_service_caller    # Service: /inspection_task see /src/tso_hastar_net/srv/chibot_task.srv for details
+rosrun rqt_service_caller rqt_service_caller    # Service: /inspection_task  see /src/tso_hastar_net/srv/chibot_task.srv for details
 ```
-
 *  TSO-HA*:
 ```shell
 roslaunch tso_hastar_net simple_astar.launch
 ```
 
-# 🌴 Dependency
+# 🌴 Prerequisites
 #### TSO-HA*-Net is tested in Ubuntu 20.04. Please install the following libraries before compilation.
 **1.ROS (melodic or noetic)**
 
@@ -70,8 +70,6 @@ roslaunch tso_hastar_net simple_astar.launch
 **3.pcl: sudo apt-get install libpcl-dev**
 
 **4.ompl**
-
-
 
 # 📬 Contact
 If you have any questions, please feel free to contact: 
