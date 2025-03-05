@@ -20,16 +20,20 @@ Our related paper is now accessible in ***Agriculture-Basel*** : [doi.org/10.339
 <p align="center">Fig.1. Flowchart for planning inspection routes via TSO-HA*-Net.</p>
 
 <p align="Justify">A semi-structured topological network is constructed using the TSO-HA* algorithm, as shown in Fig.2a. Subsequently, topological planning is conducted based on this network. Fig.2b demonstrates how the planned path is constrained by the topological network and relies on the connection points to merge seamlessly into the network.</p>
-| <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Single-house%20route%20planning/a.png" width="60%" height="60%"> | <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Merging%20the%20path%20into%20the%20network/a.png" width="60%" height="60%"> |  
-| :---: | :---: | 
-| (a) | (b) | 
+
+| <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Semi-structured%20topological%20network/a.png" width="60%" height="60%"> | <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Semi-structured%20topological%20network/b.png" width="60%" height="60%"> |   
+| :---: | :---: |  
+| (a) | (b) |  
+
 <p align="center">Fig.2. Semi-structured topological network. (a) Network construction; (b) Merging the path into the network.</p>
 
 
 <p align="Justify">In Fig.3a, pathways through elongated inter-cage corridors maintain linear trajectories, while “U”-shaped intersections exhibit seamless connectivity and smooth transitions. Fig.3b illustrates that the inspection route retains the capability to cover specific areas, indicating that the inspection vehicle can reach designated locations via the shortest path while adhering to the constraints of the topological network. The planned route enables house-to-house inspection, as shown in Fig.4. </p>
-| <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Single-house%20route%20planning/a.png" width="60%" height="60%"> | <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Single-house%20route%20planning/b.png" width="60%" height="60%"> |  
-| :---: | :---: | 
+
+| <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Single-house%20route%20planning/a.png" width="60%" height="60%"> | <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Single-house%20route%20planning/b.png" width="60%" height="60%"> |   
+| :---: | :---: |  
 | (a) | (b) | 
+
 <p align="center">Fig.3. Single-house topological planning. (a) Inspection route; (b) Access to specific positions.</p>
 
 <p align="center">
@@ -77,6 +81,7 @@ If you have any questions, please feel free to contact:
 ***Yueping Sun*** ``sunypujs@ujs.edu.cn``   
 
 ***Cz Akria*** ``2222207069@stmail.ujs.edu.cn``
+
 
   
 
