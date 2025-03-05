@@ -21,8 +21,8 @@ string message # output message
 
 
 # Command list:
-# type=0, command=0 ：record key topological nodes(pairs of starting & ending poses) using Rviz tools-"2D Pose Estimate"&"2D Nav Goal".
-# type=0, command=1 ：save nodes.
+# (Step 1)type=0, command=0 ：record key topological nodes(pairs of starting & ending poses) using Rviz tools-"2D Pose Estimate"&"2D Nav Goal".
+# (Step 2)type=0, command=1 ：save nodes.
 # type=0, command=5 ：discard nodes.
-# type=1, command=x(Any), map_name=topology_map/inspection_traffic_route_x ：generate the semi-structured topological network.
-# type=2, command=x, map_name=topology_map/inspection_traffic_route_x, dir=topology_path/path_x, path_name=path/path_x : load the semi-structured topological network.
+# (Step 3)type=1, command=x(Any), map_name=topology_map/inspection_traffic_route_x ：generate the semi-structured topological network.
+# (Step 4)type=2, command=x, map_name=topology_map/inspection_traffic_route_x, dir=topology_path/path_x, path_name=path/path_x : load the semi-structured topological network.
