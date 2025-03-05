@@ -21,7 +21,7 @@ Our related paper is now accessible in ***Agriculture-Basel*** : [doi.org/10.339
 
 <p align="Justify">A semi-structured topological network is constructed using the TSO-HA* algorithm, as shown in Fig.2a. Subsequently, topological planning is conducted based on this network. Fig.2b demonstrates how the planned path is constrained by the topological network and relies on the connection points to merge seamlessly into the network.</p>
 
-| <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Semi-structured%20topological%20network/a.png" width="60%" height="60%"> | <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Semi-structured%20topological%20network/b.png" width="60%" height="60%"> |   
+| <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Semi-structured%20topological%20network/a.png" width="70%" height="70%"> | <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Semi-structured%20topological%20network/b.png" width="70%" height="70%"> |   
 | :---: | :---: |  
 | (a) | (b) |  
 
@@ -37,13 +37,13 @@ Our related paper is now accessible in ***Agriculture-Basel*** : [doi.org/10.339
 <p align="center">Fig.3. Single-house topological planning. (a) Inspection route; (b) Access to specific positions.</p>
 
 <p align="center">
-<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Multiple-house%20route%20planning/a.png" width="100%" height="100%"> 
+<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Multiple-house%20route%20planning/a.png" width="90%" height="100%"> 
 </p>
 <p align="center">Fig.4. Multiple-house topological planning.</p>
 
 <p align="Justify">TSO-HA*-Net has the potential to plan inspection routes in more intricate environments, as shown in the Fig.5.</p>
 <p align="center">
-<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/A%20planning%20example%20in%20an%20intricate%20scenario.png" width="100%" height="100%"> 
+<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/A%20planning%20example%20in%20an%20intricate%20scenario.png" width="90%" height="100%"> 
 </p>
 <p align="center">Fig.5. A planning example in an intricate scenario.</p>
 
