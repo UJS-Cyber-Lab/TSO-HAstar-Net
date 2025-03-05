@@ -13,19 +13,20 @@ Our related paper is now accessible in ***Agriculture-Basel*** : [doi.org/10.339
 *  <p align="Justify">The rail-less navigation system based on the presented planning scheme offers a viable alternative to traditional electromagnetic and line-following navigation. This study provides valuable case studies and algorithmic references for inspection tasks in caged poultry houses and similar facilities. </p>
 
 # ⭐ Impact and Presentation
-<p align="Justify">TSO-HA*-Net consists of two parts: the lower-level TSO-HA* module and the upper-level topological planning module. Essentially, it performs the task of planning a topological network and determining a route within the network. The flowchart is shown in Fig.1.</p>
+<p align="Justify">TSO-HA*-Net consists of two parts: the lower-level TSO-HA* module and the upper-level topological planning module. Essentially, it performs the task of planning a topological network and determining a route within the network.</p>
 <p align="center">
-<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Flowchart%20for%20planning%20inspection%20routes%20via%20TSO-HA-Net.png" width="80%" height="80%"> 
+<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Flowchart%20for%20planning%20inspection%20routes%20via%20TSO-HA-Net.png" width="60%" height="60%"> 
 </p>
 <p align="center">Fig.1. Flowchart for planning inspection routes via TSO-HA*-Net.</p>
 
-<p align="Justify">Fig.2 demonstrates how the planned path is constrained by the topological network and relies on the connection points to merge seamlessly into the network.</p>
-<p align="center">
-<img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Merging%20the%20path%20into%20the%20network/a.png" width="40%" height="40%"> 
-</p>
-<p align="center">Fig.2. Merging the path into the network.</p>
+<p align="Justify">A semi-structured topological network is constructed using the TSO-HA* algorithm, as shown in Fig.2a. Subsequently, topological planning is conducted based on this network. Fig.2b demonstrates how the planned path is constrained by the topological network and relies on the connection points to merge seamlessly into the network.</p>
+| <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Single-house%20route%20planning/a.png" width="60%" height="60%"> | <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Merging%20the%20path%20into%20the%20network/a.png" width="60%" height="60%"> |  
+| :---: | :---: | 
+| (a) | (b) | 
+<p align="center">Fig.2. Semi-structured topological network. (a) Network construction; (b) Merging the path into the network.</p>
 
-<p align="Justify">In Fig.3a, pathways through elongated inter-cage corridors maintain linear trajectories, while “U”-shaped intersections exhibit seamless connectivity and smooth transitions. Fig.3b illustrates that the inspection route retains the capability to cover specific areas, indicating that the inspection vehicle can reach designated locations via the shortest path while adhering to the constraints of the topological network. Moreover, the planned route enables house-to-house inspection, as shown in Fig.4. </p>
+
+<p align="Justify">In Fig.3a, pathways through elongated inter-cage corridors maintain linear trajectories, while “U”-shaped intersections exhibit seamless connectivity and smooth transitions. Fig.3b illustrates that the inspection route retains the capability to cover specific areas, indicating that the inspection vehicle can reach designated locations via the shortest path while adhering to the constraints of the topological network. The planned route enables house-to-house inspection, as shown in Fig.4. </p>
 | <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Single-house%20route%20planning/a.png" width="60%" height="60%"> | <img src="https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net/blob/main/pic/Single-house%20route%20planning/b.png" width="60%" height="60%"> |  
 | :---: | :---: | 
 | (a) | (b) | 
@@ -43,18 +44,18 @@ Our related paper is now accessible in ***Agriculture-Basel*** : [doi.org/10.339
 <p align="center">Fig.5. A planning example in an intricate scenario.</p>
 
 # ⚡ Quick Start
-```c++  
+```shell
 catkin_make
 source devel/setup.bash
 ```
 *  TSO-HA*-Net:
-```c++ 
+```shell 
 roslaunch tso_hastar_net inspection.launch
-rosrun rqt_service_caller rqt_service_caller   -->  Service: /inspection_task see /src/tso_hastar_net/srv/chibot_task.srv for details
+rosrun rqt_service_caller rqt_service_caller    # Service: /inspection_task see /src/tso_hastar_net/srv/chibot_task.srv for details
 ```
 
 *  TSO-HA*:
-```c++ 
+```shell
 roslaunch tso_hastar_net simple_astar.launch
 ```
 
