@@ -45,6 +45,8 @@ Our related paper is now accessible in ***Agriculture-Basel*** : [doi.org/10.339
 
 # ⚡ Quick Start
 ```shell
+mkdir ~/$A_ROS_DIR$/src && cd ~/$A_ROS_DIR$/src
+git clone https://github.com/UJS-Cyber-Lab/TSO-HAstar-Net.git
 catkin_make
 source devel/setup.bash
 ```
