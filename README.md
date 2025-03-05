@@ -63,13 +63,13 @@ roslaunch tso_hastar_net simple_astar.launch
 
 # 🌴 Prerequisites
 #### TSO-HA*-Net is tested in Ubuntu 20.04. Please install the following libraries before compilation.
-**1.ROS (melodic or noetic)**
+**1. ROS (melodic or noetic)**
 
-**2.eigen: sudo apt-get install libeigen3-dev**
+**2. eigen: sudo apt-get install libeigen3-dev**
 
-**3.pcl: sudo apt-get install libpcl-dev**
+**3. pcl: sudo apt-get install libpcl-dev**
 
-**4.ompl**
+**4. ompl**
 
 # 📬 Contact
 If you have any questions, please feel free to contact: 
